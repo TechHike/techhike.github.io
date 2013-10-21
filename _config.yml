@@ -3,4 +3,5 @@ title: TechHike
 markdown: redcarpet
 pygments: true
 permalink: /:year/:month/:title
+timezone: America/Los_Angeles
 exclude: ['README.md']
