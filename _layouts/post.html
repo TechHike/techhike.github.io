@@ -4,7 +4,8 @@ layout: default
 
 <a name="{{ page.url }}"></a>
 <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+<div class="post-date">{{ post.date | date: "%-d %B %Y" }}</div>
 
-{{ page.content }}
+{{ content }}
 	
 <div class="post-separator"></div>
