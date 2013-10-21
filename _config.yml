@@ -1,5 +1,6 @@
-name: Your New Jekyll Site
+name: TechHike
+title: TechHike
 markdown: redcarpet
 pygments: true
-permalink: pretty
+permalink: /:year/:month/:title
 exclude: ['README.md']
