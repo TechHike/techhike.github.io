@@ -1,8 +1,9 @@
------
+---
 title: "Should you be a platform developer?"
 layout: post
 categories: [ "Consulting", "Programming" ]
------
+---
+
 Over the past few years I have seen many developers struggle with a growing dilemma, do I devote my time to platform development?
 
 When I say "platform development" I mean building application on products such as [Microsoft SharePoint][1] and [Microsoft CRM][2]. The IT world is rapidly moving toward standardizing on platforms such as these. They offer lower IT costs, standardized infrastructure and overall lower cost of ownership. It makes sense from a business perspective, but what do you do as a developer?

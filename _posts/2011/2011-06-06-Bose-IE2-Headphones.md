@@ -1,8 +1,8 @@
------
+---
 title: "Bose IE2 Headphones"
 layout: post
 categories: [ "Review" ]
------
+---
 
 A couple months ago, I found myself longing for a new set of headphones. I have a pair of Sennheiser headphones which are rather large but sound great and have a boom microphone. As I realized, those don't travel very well and I have recently started to work more onsite and in remote locations.
 
