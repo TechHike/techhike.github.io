@@ -3,5 +3,5 @@ title: TechHike
 url: http://techhike.github.io
 markdown: redcarpet
 permalink: /:year/:month/:day/:title
-timezone: America/Los_Angeles
+timezone: "US/Pacific"
 exclude: ['README.md']

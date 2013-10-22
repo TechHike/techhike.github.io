@@ -1,60 +1,11 @@
-<!--<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
-
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
-
-    </body>
-</html>-->
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>
-        {{ page.title }} - {{ site.name }}
+        {% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}
     </title>
+    <!-- generated {{ site.time | date_to_xmlschema  }} -->
 
     <link rel="icon" href="/favicon.ico">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -103,7 +54,7 @@
                         <br />
                         <a href="http://www.linkedin.com/profile/view?id=2238939&amp;trk=tab_pro">
                             <img src="/images/linkedin.png" style="width: 29px; height: 31px;" alt="Linkedin" /></a>
-                        <a href="/feed.xml">
+                        <a href="/bfeed.xml">
                             <img src="/images/16094192891320973681.png" style="width: 29px; height: 31px;" alt="Feed" /></a>
                     </div>
                     <!--<a class="twitter-timeline" href="https://twitter.com/TechHike" data-widget-id="250295447481098241">Tweets by @@TechHike</a>
@@ -117,8 +68,8 @@
     </div>
 
 
-    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
-    <script src="base.js"></script>
+    <script src="//code.jquery.com/jquery-1.6.2.min.js"></script>
+    <script src="/base.js"></script>
 
     <script type="text/javascript">
         var _gaq = _gaq || [];
