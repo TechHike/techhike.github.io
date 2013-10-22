@@ -1,14 +1,15 @@
------
+---
 title: "How to add your last tweet to your blog"
 layout: post
 categories: [ "Programming" ]
------
+---
 
 I thought it would be nice to see my last tweet on my blog. It turns out that there is an easy way to do this using jquery and the twitter api. These instructions may not work for you if your blogging platform does not allow embedded JavaScript (wordpress.com does not).
 
 To get the tweets for any user in JSON format you can visit http://api.twitter.com/1/statuses/user_timeline/username.json?callback=?
 
 Where username is the twitter username.
+
 
 Make sure that you first have jquery included in your page like this:
 
