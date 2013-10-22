@@ -1,9 +1,7 @@
 ---
 title: Rebellion
-date: 2013-08-15 09:00
-topics: Consulting, Programming
-comments: true
-published: true
+layout: post
+categories: [ Consulting, Programming ]
 ---
 
 I think we have all been there. Maybe you were the instigator, maybe you were the manager. Someone is spouting off about this or that. "The company is terrible". If we only had a better processes or if we all just had more of a sense of community. We just need these few things and we will all reach corporate nirvana.

@@ -1,8 +1,7 @@
 ---
 title: "Rediscovering Code"
-date: 2013-08-07 09:00
+categories:  [ "Programming" ]
 layout: post
-categories: Programming
 comments: true
 ---
 

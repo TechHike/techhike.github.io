@@ -1,9 +1,7 @@
 ---
 title: What I look for in a Candidate
-date: 2013-08-08 09:00:00
-topics: Consulting 
-comments: true
-published: false
+layout: post
+categories: [ Consulting ]
 --- 
 
 1. __Experience.__ Nothing trumps experience. The more times you are "at-bat", the more lessons you learn. Particularly experience at progressively higher levels responsibility is desirable. Challenging yourself is ultimately the only way to grow and learn.

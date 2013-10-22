@@ -1,7 +1,7 @@
 name: TechHike
 title: TechHike
+url: http://techhike.github.io
 markdown: redcarpet
-pygments: true
-permalink: /:year/:month/:title
+permalink: /:year/:month/:day/:title
 timezone: America/Los_Angeles
 exclude: ['README.md']

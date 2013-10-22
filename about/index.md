@@ -4,7 +4,7 @@ title:  "About"
 date:   2013-10-20 08:00:00
 ---
 
-<img class="right" src="files/images/profile.png" />
+<img class="right" src="/images/profile.png" />
 
 Hi, I am Clint. I'm a technology enthusiast, [software developer](http://www.cartoonstock.com/directory/s/software_engineer.asp), father, husband, [cajun](http://en.wikipedia.org/wiki/Cajun), worrywart and sometimes [grouch](http://en.wikipedia.org/wiki/Oscar_the_Grouch). I live in the suburbs of Seattle where I watch [LSU football](http://www.lsusports.net/) and enjoy our annual crawfish boil. I have 2 daughters which leaves me as the only man in the house. Even the dog is female.
 
@@ -25,7 +25,7 @@ If you are interested in more information about my work, [take a look at my resu
 
 Outside of work I love guitar, golf, football and being a dad to my 2 daughters. [Hiking is also a passion][cj]. I ran [my first marathon][m] on June 26, 2011 in a time of 4 hours and 55 minutes.
 
-<img class="right" style="width: 200px;" src="files/images/crossfit_afro.jpg" />
+<img class="right" style="width: 200px;" src="/images/crossfit_afro.jpg" />
 
 My most recent addiction is [Crossfit](http://games.crossfit.com). After about an 18 year hideous from organized physical activity, I started Crossfit in July of 2011. For the first 3 months I proceeded to try my hardest but constantly felt like a used dish towel. I stuck with it and I have seen huge improvement in my physical fitness level. Although the path is difficult, I would not change a thing.
 
@@ -54,7 +54,7 @@ I built Tiger WCM to run [TechHike.net](techhike) and decided to make it an open
 
 ###[Cajun Journeymen][cj]
 
-<img class="right" src="files/images/cajunjourneymen.jpg" />
+<img class="right" src="/images/cajunjourneymen.jpg" />
 
 Enough with the software projects already. These are certifiable adventures. Since 2001, our illustrious band of misfits have thrown caution into the wind and trekked through some of the most beautiful wilderness areas in the world. Check out our stories.
 

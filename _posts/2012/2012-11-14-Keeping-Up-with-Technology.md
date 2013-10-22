@@ -1,9 +1,7 @@
 ---
 title: Keeping Up with Technology
-date: 2012-11-12  09:00:00
-topics: Consulting, Programming
-comments: false
-published: true
+layout: post
+categories: [ Consulting, Programming ]
 --- 
 
 

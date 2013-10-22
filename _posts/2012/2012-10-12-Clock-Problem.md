@@ -1,8 +1,7 @@
 ---
 title: "Tech Interview Question: The Clock Problem"
-date: 2012-10-12  08:00:00
-categories: Programming Interviews
 layout: post
+categories:  [ "Programming", "Interviews" ]
 --- 
 
 "The Clock Problem" is an interview question that I have been using for a few years. I first learned about it when I was being interviewed. I have now adopted it as my first line of defense against imposters. :)

@@ -1,8 +1,7 @@
 ---
-title: Link Roundup
-date: 2012-09-15    08:00:00
-topics: Links
-draft: false
+title: "Link Roundup"
+layout: post
+categories: [ "Links" ]
 --- 
 
 ### [Windows 8: The Boldest, Biggest Redesign In Microsoft's History](http://www.fastcodesign.com/1670705/microsoft-new-design-strategy)

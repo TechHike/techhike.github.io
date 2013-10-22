@@ -1,15 +1,14 @@
 ---
 title: "Training People"
-date: 2012-04-02
-categories: Consulting  
-
+categories: [ "Consulting" ]
+layout: post
 --- 
 
 Whether you know it or not, you are training everyone you interact with each day. When you answer that email at midnight or take that call at 8PM, you are sending a message. The message is that you work any time and you are willing to sacrifice your personal life for the job.
 
 In typical over-achiever fashion, you are reacting to each request without regard for your personal well-being. After following this pattern for years, I have realized that I need to stop the vicious cycle.
 
-<div class="vinette"><img src="files/images/vicious-cycle-Zzbbc.jpg" />you can't win</div>
+<div class="vinette"><img src="/images/vicious-cycle-Zzbbc.jpg" />you can't win</div>
 
 Here are a few things that I have learned:
 

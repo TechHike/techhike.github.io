@@ -1,14 +1,12 @@
 ---
-title: Windows 8 Developer Messaging
-date: 2012-09-19  10:00:00
-tags: Rant
-draft: false
-topics: Windows 8
+title: "Windows 8 Developer Messaging"
+layout: post
+categories: [ "Windows 8" ]
 --- 
 
 Bit of a rant here. I received this message today Microsoft.
 
-<div class="vinette"><img src="files/images/ms_win8_dev_marketing.png" /></div>
+<div class="vinette"><img src="/images/ms_win8_dev_marketing.png" /></div>
 
 Do you think the average developer knows that "Windows 8 GA" means?
 

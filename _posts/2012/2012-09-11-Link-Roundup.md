@@ -1,8 +1,7 @@
 ---
-title: Link Roundup
-date: 2012-09-11 08:00:00
-topics: Links
-draft: false
+title: "Link Roundup"
+layout: post
+categories: [ "Links" ]
 --- 
 
 ### [Never Forget](http://en.wikipedia.org/wiki/September_11_attacks)
