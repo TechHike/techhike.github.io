@@ -13,92 +13,92 @@ When implementing a custom field control for SharePoint, the development experie
 First, here is the base class used for the field control. It has a virtual property used to set the user control path. A property override for the value of the field which is read from the user control. On initialization it loads the user control and sets the context.
 
 {% highlight csharp linenos %}
-	using System;
-	using System.Web.UI;
-	using Microsoft.SharePoint.WebControls;
+using System;
+using System.Web.UI;
+using Microsoft.SharePoint.WebControls;
 
-	namespace MyProject.Web.UI.FieldControls
+namespace MyProject.Web.UI.FieldControls
+{
+	public abstract class UserControlFieldBase : BaseFieldControl
 	{
-		public abstract class UserControlFieldBase : BaseFieldControl
+
+		private SPFieldUserControlBase _usercontrol;
+
+		public virtual string UserControlPath { get; set; }
+
+		public override object Value
 		{
-
-			private SPFieldUserControlBase _usercontrol;
-
-			public virtual string UserControlPath { get; set; }
-
-			public override object Value
+			get
 			{
-				get
-				{
-					return _usercontrol == null ? base.Value : _usercontrol.Value;
-				}
-				set
-				{
-					base.ItemFieldValue = value;
-				}
+				return _usercontrol == null ? base.Value : _usercontrol.Value;
 			}
-
-			public UserControlFieldBase() : base()
+			set
 			{
+				base.ItemFieldValue = value;
 			}
+		}
 
-			protected override void OnInit(EventArgs e)
+		public UserControlFieldBase() : base()
+		{
+		}
+
+		protected override void OnInit(EventArgs e)
+		{
+			base.OnInit(e);
+			UserControlPath = null;
+		}
+
+		protected override void CreateChildControls()
+		{
+			Controls.Clear();
+			base.CreateChildControls();
+
+			if (!string.IsNullOrEmpty(UserControlPath))
 			{
-				base.OnInit(e);
-				UserControlPath = null;
-			}
+				_usercontrol = (SPFieldUserControlBase)Page.LoadControl(UserControlPath);
+				_usercontrol.FieldControl = this;
 
-			protected override void CreateChildControls()
-			{
-				Controls.Clear();
-				base.CreateChildControls();
-
-				if (!string.IsNullOrEmpty(UserControlPath))
-				{
-					_usercontrol = (SPFieldUserControlBase)Page.LoadControl(UserControlPath);
-					_usercontrol.FieldControl = this;
-
-					Controls.Add(_usercontrol);
-				}
+				Controls.Add(_usercontrol);
 			}
 		}
 	}
+}
 {% endhighlight %}
 
 Here's an example field control subclass. This class simply specifies the user control path and let's the base class handle all the details of loading the user control and setting the context. This is the server control that you will embed into you page layouts.
 
 {% highlight csharp linenos %}
-	using System.Web.UI;
-	namespace MyProject.Web.UI.FieldControls
-	{
-		public class MyFieldContol : UserControlFieldBase
+using System.Web.UI;
+namespace MyProject.Web.UI.FieldControls
+{
+	public class MyFieldContol : UserControlFieldBase
+		{
+		public override string UserControlPath
 			{
-			public override string UserControlPath
-				{
-				get
-				{
-				return "~/_controltemplates/MyFieldControl.ascx";
-				}
+			get
+			{
+			return "~/_controltemplates/MyFieldControl.ascx";
 			}
 		}
 	}
+}
 {% endhighlight %}
 
 Next, is the abstract base class for the user control. This class provides a property for a reference to the parent field control and an abstract property for the field value. The field control property is important because our user control will need to know all the information about the field it is attached to. This includes the SPField context and control mode among other things.
 
 {% highlight csharp linenos %}
-	using System.Web.UI;
+using System.Web.UI;
 
-	namespace MyProject.Web.UI.FieldControls
+namespace MyProject.Web.UI.FieldControls
+{
+	public abstract class SPFieldUserControlBase : UserControl
 	{
-		public abstract class SPFieldUserControlBase : UserControl
-		{
-			protected SPFieldUserControlBase();
+		protected SPFieldUserControlBase();
 
-			public BaseFieldControl FieldControl { get; set; }
-			public abstract object Value { get; }
-		}
+		public BaseFieldControl FieldControl { get; set; }
+		public abstract object Value { get; }
 	}
+}
 {% endhighlight %}
 
 Lastly you can create a user control that inherits from the SPFieldUserControlBase class and implement the specific UI that is necessary for you field control to function. See my pervious post on how to create a custom field control for further direction on creating field controls from scratch.
