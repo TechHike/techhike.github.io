@@ -12,7 +12,7 @@ When implementing a custom field control for SharePoint, the development experie
 
 First, here is the base class used for the field control. It has a virtual property used to set the user control path. A property override for the value of the field which is read from the user control. On initialization it loads the user control and sets the context.
 
-`
+{% highlight csharp %}
 	using System;
 	using System.Web.UI;
 	using Microsoft.SharePoint.WebControls;
@@ -63,11 +63,11 @@ First, here is the base class used for the field control. It has a virtual prope
 			}
 		}
 	}
-`
+{% endhighlight %}
 
 Here's an example field control subclass. This class simply specifies the user control path and let's the base class handle all the details of loading the user control and setting the context. This is the server control that you will embed into you page layouts.
 
-`
+{% highlight csharp %}
 	using System.Web.UI;
 	namespace MyProject.Web.UI.FieldControls
 	{
@@ -82,11 +82,11 @@ Here's an example field control subclass. This class simply specifies the user c
 			}
 		}
 	}
-`
+{% endhighlight %}
 
 Next, is the abstract base class for the user control. This class provides a property for a reference to the parent field control and an abstract property for the field value. The field control property is important because our user control will need to know all the information about the field it is attached to. This includes the SPField context and control mode among other things.
 
-`
+{% highlight csharp %}
 	using System.Web.UI;
 
 	namespace MyProject.Web.UI.FieldControls
@@ -99,7 +99,7 @@ Next, is the abstract base class for the user control. This class provides a pro
 			public abstract object Value { get; }
 		}
 	}
-`
+{% endhighlight %}
 
 Lastly you can create a user control that inherits from the SPFieldUserControlBase class and implement the specific UI that is necessary for you field control to function. See my pervious post on how to create a custom field control for further direction on creating field controls from scratch.
 This technique also you to have easiest possible development process while leveraging the SharePoint field control infrastructure. Any questions or comments, please let me know!
