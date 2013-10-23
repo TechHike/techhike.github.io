@@ -1,8 +1,8 @@
------
+---
 title: "Custom Field control implemented as a User Control"
 layout: post
 topics: [ "SharePoint", "Programming" ]
------
+---
 
 When creating custom controls it is often must easier to create a control using the "User Control" development model instead of the "Server Control" model. [Server controls](http://msdn.microsoft.com/en-us/library/zt27tfhy.aspx) generally have a more "low level" feel and dictate that the developer build the control's rendering from scratch. Either by building a control tree or by constructing the rendered output in code.
 
