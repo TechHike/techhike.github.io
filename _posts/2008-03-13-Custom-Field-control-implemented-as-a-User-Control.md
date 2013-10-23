@@ -12,7 +12,7 @@ When implementing a custom field control for SharePoint, the development experie
 
 First, here is the base class used for the field control. It has a virtual property used to set the user control path. A property override for the value of the field which is read from the user control. On initialization it loads the user control and sets the context.
 
-{% highlight csharp %}
+{% highlight csharp linenos %}
 	using System;
 	using System.Web.UI;
 	using Microsoft.SharePoint.WebControls;
@@ -67,7 +67,7 @@ First, here is the base class used for the field control. It has a virtual prope
 
 Here's an example field control subclass. This class simply specifies the user control path and let's the base class handle all the details of loading the user control and setting the context. This is the server control that you will embed into you page layouts.
 
-{% highlight csharp %}
+{% highlight csharp linenos %}
 	using System.Web.UI;
 	namespace MyProject.Web.UI.FieldControls
 	{
@@ -86,7 +86,7 @@ Here's an example field control subclass. This class simply specifies the user c
 
 Next, is the abstract base class for the user control. This class provides a property for a reference to the parent field control and an abstract property for the field value. The field control property is important because our user control will need to know all the information about the field it is attached to. This includes the SPField context and control mode among other things.
 
-{% highlight csharp %}
+{% highlight csharp linenos %}
 	using System.Web.UI;
 
 	namespace MyProject.Web.UI.FieldControls
