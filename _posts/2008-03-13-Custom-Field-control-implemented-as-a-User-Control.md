@@ -19,49 +19,49 @@ using Microsoft.SharePoint.WebControls;
 
 namespace MyProject.Web.UI.FieldControls
 {
-	public abstract class UserControlFieldBase : BaseFieldControl
-	{
+public abstract class UserControlFieldBase : BaseFieldControl
+{
 
-		private SPFieldUserControlBase _usercontrol;
+private SPFieldUserControlBase _usercontrol;
 
-		public virtual string UserControlPath { get; set; }
+public virtual string UserControlPath { get; set; }
 
-		public override object Value
-		{
-			get
-			{
-				return _usercontrol == null ? base.Value : _usercontrol.Value;
-			}
-			set
-			{
-				base.ItemFieldValue = value;
-			}
-		}
+public override object Value
+{
+get
+{
+return _usercontrol == null ? base.Value : _usercontrol.Value;
+}
+set
+{
+base.ItemFieldValue = value;
+}
+}
 
-		public UserControlFieldBase() : base()
-		{
-		}
+public UserControlFieldBase() : base()
+{
+}
 
-		protected override void OnInit(EventArgs e)
-		{
-			base.OnInit(e);
-			UserControlPath = null;
-		}
+protected override void OnInit(EventArgs e)
+{
+base.OnInit(e);
+UserControlPath = null;
+}
 
-		protected override void CreateChildControls()
-		{
-			Controls.Clear();
-			base.CreateChildControls();
+protected override void CreateChildControls()
+{
+Controls.Clear();
+base.CreateChildControls();
 
-			if (!string.IsNullOrEmpty(UserControlPath))
-			{
-				_usercontrol = (SPFieldUserControlBase)Page.LoadControl(UserControlPath);
-				_usercontrol.FieldControl = this;
+if (!string.IsNullOrEmpty(UserControlPath))
+{
+_usercontrol = (SPFieldUserControlBase)Page.LoadControl(UserControlPath);
+_usercontrol.FieldControl = this;
 
-				Controls.Add(_usercontrol);
-			}
-		}
-	}
+Controls.Add(_usercontrol);
+}
+}
+}
 }
 {% endhighlight %}
 
