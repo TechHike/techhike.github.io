@@ -69,9 +69,9 @@ Rapid Tools for SharePoint 2007 is a set of developer tools that are dedicated t
 [datahike]: http://datahike.appspot.com
 [appengine]: http://code.google.com/appengine/
 [rapidtools]: http://code.google.com/p/rapid-tools/
-[techhike]: http://www.techhike.net
-[cruiser]: https://github.com/TechHike/Cruiser
-[mole]: https://github.com/TechHike/Mole
+[techhike]: http://techhike.net
+[cruiser]: https://github.com/csim/Cruiser
+[mole]: https://github.com/csim/Mole
 
 [gae]: http://code.google.com/appengine/
 [cj]: http://www.cajunjourneymen.com
