@@ -5,3 +5,4 @@ markdown: redcarpet
 permalink: /:year/:month/:day/:title
 timezone: "US/Pacific"
 exclude: ['README.md']
+disqus_shortname: "techhike"
