@@ -2,7 +2,7 @@ name: TechHike
 title: TechHike
 url: http://techhike.net
 markdown: redcarpet
-permalink: /:year/:month/:day/:title
+permalink: /:year-:month-:day-:title
 timezone: "US/Pacific"
 exclude: ['README.md']
 disqus_shortname: "techhike"
