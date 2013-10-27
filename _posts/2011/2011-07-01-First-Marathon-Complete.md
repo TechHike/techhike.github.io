@@ -33,7 +33,7 @@ Then came race day. I felt prepared, I was ready. Still there was some doubt, th
 I was one of 26,000 people starting the race in Tukwilla, WA. What a scene at the starting line!
 
 <div class="vinette">
-	<img src="files/images/Start-5-640x575.jpg" />
+	<img src="/images/Start-5-640x575.jpg" />
 	the start
 </div>
 
@@ -54,9 +54,10 @@ I realized that I could finish the race in under 5 hours if I ran those 5 miles 
 Just before the finish line, I saw my wife, my 2 kids and my parents cheering me on. It was the best thing I had seen all day.
 
 <div class="vinette">
-	<img src="files/images/20110625-IMG_1769.jpg" />
+	<img src="/images/20110625-IMG_1769.jpg" />
 	me on mile 26
 </div>
+
 
 After a quick picture and hugs, I headed for the finish line. What a great feeling. I didn't expect to get emotional but it hit me when I saw the finish line. I had done it! My first marathon. What an experience.
 
