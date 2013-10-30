@@ -1,8 +1,13 @@
 name: TechHike
 title: TechHike
 url: http://techhike.net
+
 markdown: redcarpet
 permalink: /:year/:month/:day/:title
 timezone: "US/Pacific"
 exclude: ['README.md']
-disqus_shortname: "techhike"
+
+
+disqus_shortname: "clintsim"
+twitter_username: "clintsim"
+github_username: "clintsim"
